@@ -1,0 +1,53 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  body {
+    @apply bg-background text-text font-sans;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, theme('colors.gradient-start'), theme('colors.gradient-end'));
+  }
+
+  .nav-link {
+    @apply block p-3 rounded-lg transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:pl-5;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-medium p-6 transition-all duration-300 hover:shadow-hard;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-dark hover:shadow-medium;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary text-white hover:bg-secondary-dark hover:shadow-medium;
+  }
+
+  .input-field {
+    @apply w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-300;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold mb-6 text-primary font-display;
+  }
+
+  .section-subtitle {
+    @apply text-xl font-medium mb-4 text-text-light;
+  }
+
+  .stat-card {
+    @apply p-6 bg-white rounded-xl shadow-soft hover:shadow-medium transition-all duration-300;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-in-out;
+  }
