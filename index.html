@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-  <html lang="en">
+    <html lang="en">
     <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Web Application</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Input App</title>
+      <link rel="stylesheet" href="style.css">
     </head>
     <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.jsx"></script>
+      <div class="container">
+        <div class="icon-group" id="section1">
+          <div class="section-title">
+            <p>Embark on an adventure! Choose your character:</p>
+          </div>
+          <div class="icon-options">
+            <div class="icon-option" data-value="dog">
+              <span class="icon">🐶</span>
+              <span class="icon-name">Dog</span>
+            </div>
+            <div class="icon-option" data-value="cat">
+              <span class="icon">🐱</span>
+              <span class="icon-name">Cat</span>
+            </div>
+            <div class="icon-option" data-value="mouse">
+              <span class="icon">🐭</span>
+              <span class="icon-name">Mouse</span>
+            </div>
+          </div>
+        </div>
+        <div class="icon-group" id="section2">
+          <div class="section-title">
+            <p>Where will your journey take you?</p>
+          </div>
+          <div class="icon-options">
+            <div class="icon-option" data-value="home">
+              <span class="icon">🏠</span>
+              <span class="icon-name">Home</span>
+            </div>
+            <div class="icon-option" data-value="beach">
+              <span class="icon">🏖️</span>
+              <span class="icon-name">Beach</span>
+            </div>
+            <div class="icon-option" data-value="mountain">
+              <span class="icon">⛰️</span>
+              <span class="icon-name">Mountain</span>
+            </div>
+          </div>
+        </div>
+        <div class="icon-group" id="section3">
+          <div class="section-title">
+            <p>What virtues will guide you?</p>
+          </div>
+          <div class="icon-options">
+            <div class="icon-option" data-value="courage">
+              <span class="icon">💪</span>
+              <span class="icon-name">Courage</span>
+            </div>
+            <div class="icon-option" data-value="brave">
+              <span class="icon">🦁</span>
+              <span class="icon-name">Brave</span>
+            </div>
+            <div class="icon-option" data-value="friendship">
+              <span class="icon">🤝</span>
+              <span class="icon-name">Friendship</span>
+            </div>
+          </div>
+        </div>
+        <button id="generateButton">Generate</button>
+        <div id="responseSection" class="response-section"></div>
+      </div>
+      <script src="script.js"></script>
     </body>
-  </html>
+    </html>
